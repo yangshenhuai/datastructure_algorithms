@@ -27,13 +27,5 @@ public class ShellSort {
         return input;
     }
 
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(new ShellSort().shellSort(new int[]{114, 131, 118, 85, 156, 147, 126, 15, 178, 159, 64, 93, 176, 141, 175, 63, 83, 123, 60, 44})));
-        System.out.println(Arrays.toString(new ShellSort().shellSort(new int[]{10,8,9,7,6,4,5,2,1})));
-        System.out.println(Arrays.toString(new ShellSort().shellSort(new int[]{1})));
-    }
-
-
-
 
 }
