@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class QuickSort {
 
 
-    private List<Integer> quickSort(List<Integer> input){
+    public List<Integer> quickSort(List<Integer> input){
 
         if (input.size() <=1 ){
             return input;
@@ -33,7 +33,4 @@ public class QuickSort {
     }
 
 
-    public static void main(String[] args) {
-        System.out.println(new QuickSort().quickSort(Arrays.asList(10,5,3,2,20,30,1,4,5)));
-    }
 }
