@@ -1,6 +1,5 @@
 package twopointer;
 
-import com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI;
 
 import java.util.*;
 
