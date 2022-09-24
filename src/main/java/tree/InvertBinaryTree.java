@@ -1,5 +1,7 @@
 package tree;
 
+import java.util.Stack;
+
 /**
  * https://leetcode.com/problems/invert-binary-tree/
  *
@@ -19,6 +21,25 @@ public class InvertBinaryTree   {
         TreeNode revertRight = invertTree(root.right);
         root.right = revertLeft;
         root.left = revertRight;
+        return root;
+    }
+
+
+    public TreeNode invertTree2(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            TreeNode left = node.left;
+            node.left = node.right;
+            node.right = left;
+            if (node.left != null){
+                stack.push(node.left);
+            }
+            if (node.right != null){
+                stack.push(node.right);
+            }
+        }
         return root;
     }
 
